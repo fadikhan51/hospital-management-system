@@ -31,6 +31,7 @@ const userSchema = new mongoose.Schema(
         role: {
             type: Number,
             required: true,
+            default: "0"
         },
         details: {
             type: Object,

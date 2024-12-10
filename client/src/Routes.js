@@ -59,6 +59,7 @@ import UpdateVaccineCat from './admin/UpdateVaccineCat'
 import ListAppVaccine from "./admin/ListAppVaccine"
 import AddAppVaccine from './admin/AddAppVaccine'
 import UpdateVaccApp from './admin/UpdateVaccApp'
+import LandingPage from './landingPage/LandingPage'
 
 
 
@@ -66,6 +67,7 @@ const Routes = () => {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path='/' exact component={LandingPage}/>
                 <Route path="/signup" exact component={Signup} />
                 <Route path="/signin" exact component={Signin} />
                 <AdminRoute path="/" exact component={AdminDashboard} />
